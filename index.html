@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CraftByte4Fun</title>
+<meta name="description" content="CraftByte4Fun makes small, simple one-tap games for Android and iPhone.">
+<link rel="icon" href="assets/stack-up.png">
+<style>
+  :root {
+    --bg: #f5f6fb; --card: #ffffff; --fg: #161a2e; --muted: #5b6180; --line: #e0e4ef;
+    --stack: #e2553a; --orbit: #138a5d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0e1b; --card: #141933; --fg: #eceffa; --muted: #9ba2c6; --line: #252c4b; --stack: #ff8a6e; --orbit: #5ef0b0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 64px; display: flex; flex-direction: column; gap: 40px; }
+  h1 { margin: 0; font-size: clamp(36px, 7vw, 52px); line-height: 1.05; letter-spacing: -.02em; }
+  .lead { margin: 12px 0 0; color: var(--muted); font-size: 18px; max-width: 60ch; }
+  .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .game { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .game header { display: flex; align-items: center; gap: 16px; }
+  .game img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
+  .game h2 { margin: 0; font-size: 22px; line-height: 1.2; }
+  .game .tag { margin: 2px 0 0; font-weight: 600; font-size: 14px; }
+  .stack .tag { color: var(--stack); } .orbit .tag { color: var(--orbit); }
+  .game p { margin: 0; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
+  a { color: inherit; font-weight: 600; }
+  .status { font-size: 13px; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); font-size: 15px; display: flex; flex-direction: column; gap: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>CraftByte4Fun</h1>
+    <p class="lead">Small, simple one-tap games for Android and iPhone. Easy to learn, hard to put down.</p>
+  </header>
+
+  <section class="games" aria-label="Games">
+    <article class="game stack">
+      <header>
+        <img src="assets/stack-up.png" alt="Stack Up icon">
+        <div><h2>Stack Up: Tap Tower</h2><p class="tag">One tap. How high can you go?</p></div>
+      </header>
+      <p>Drop the sliding block, slice off the overhang, and build the tallest tower you can. Land perfect drops in a row to grow your block back.</p>
+      <div class="links"><a href="stack-up/privacy/">Privacy policy</a></div>
+      <p class="status">Coming soon to Google Play and the App Store.</p>
+    </article>
+
+    <article class="game orbit">
+      <header>
+        <img src="assets/orbit-flip.png" alt="Orbit Flip icon">
+        <div><h2>Orbit Flip: One Tap Arcade</h2><p class="tag">Two orbits. One tap. No mercy.</p></div>
+      </header>
+      <p>Flip between two orbits to grab the gold and dodge the red spikes. Every point makes you faster.</p>
+      <div class="links"><a href="orbit-flip/privacy/">Privacy policy</a></div>
+      <p class="status">Coming soon to Google Play and the App Store.</p>
+    </article>
+  </section>
+
+  <footer>
+    <span>Support and questions: <a href="mailto:craftbyte4fun@gmail.com">craftbyte4fun@gmail.com</a></span>
+    <span>© 2026 CraftByte4Fun</span>
+  </footer>
+</main>
+</body>
+</html>
