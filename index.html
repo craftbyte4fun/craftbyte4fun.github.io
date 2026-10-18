@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CraftByte4Fun</title>
-<meta name="description" content="CraftByte4Fun makes small, simple one-tap games for Android and iPhone.">
+<meta name="description" content="CraftByte4Fun makes small, simple tap games for Android and iPhone.">
 <link rel="icon" href="assets/craftbyte4fun.png">
 <style>
   :root {
     --bg: #f5f6fb; --card: #ffffff; --fg: #161a2e; --muted: #5b6180; --line: #e0e4ef;
-    --stack: #e2553a; --orbit: #138a5d;
+    --stack: #e2553a; --orbit: #138a5d; --flock: #d9534a;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0b0e1b; --card: #141933; --fg: #eceffa; --muted: #9ba2c6; --line: #252c4b; --stack: #ff8a6e; --orbit: #5ef0b0; }
+    :root { --bg: #0b0e1b; --card: #141933; --fg: #eceffa; --muted: #9ba2c6; --line: #252c4b; --stack: #ff8a6e; --orbit: #5ef0b0; --flock: #ff9a8c; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -25,7 +25,7 @@
   .game img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
   .game h2 { margin: 0; font-size: 22px; line-height: 1.2; }
   .game .tag { margin: 2px 0 0; font-weight: 600; font-size: 14px; }
-  .stack .tag { color: var(--stack); } .orbit .tag { color: var(--orbit); }
+  .stack .tag { color: var(--stack); } .orbit .tag { color: var(--orbit); } .flock .tag { color: var(--flock); }
   .game p { margin: 0; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
   a { color: inherit; font-weight: 600; }
@@ -37,7 +37,7 @@
 <main>
   <header>
     <h1>CraftByte4Fun</h1>
-    <p class="lead">Small, simple one-tap games for Android and iPhone. Easy to learn, hard to put down.</p>
+    <p class="lead">Small, simple tap games for Android and iPhone. Easy to learn, hard to put down.</p>
   </header>
 
   <section class="games" aria-label="Games">
@@ -58,6 +58,15 @@
       </header>
       <p>Flip between two orbits to grab the gold and dodge the red spikes. Every point makes you faster.</p>
       <div class="links"><a href="orbit-flip/privacy/">Privacy policy</a></div>
+      <p class="status">Coming soon to Google Play and the App Store.</p>
+    </article>
+    <article class="game flock">
+      <header>
+        <img src="assets/flock-out.png" alt="Flock Out icon">
+        <div><h2>Flock Out: Bird Escape Puzzle</h2><p class="tag">Tap. Fly. Free them all.</p></div>
+      </header>
+      <p>Every bird flies the way its beak points, but only if the path is clear. Find the right order and free the whole flock.</p>
+      <div class="links"><a href="flock-out/privacy/">Privacy policy</a></div>
       <p class="status">Coming soon to Google Play and the App Store.</p>
     </article>
   </section>
