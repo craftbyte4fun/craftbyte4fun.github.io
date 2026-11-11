@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CraftByte4Fun</title>
-<meta name="description" content="CraftByte4Fun makes small, simple tap games for Android and iPhone.">
+<meta name="description" content="CraftByte4Fun makes small, simple tap games and apps for Android and iPhone.">
 <link rel="icon" href="assets/craftbyte4fun.png">
 <style>
   :root {
     --bg: #f5f6fb; --card: #ffffff; --fg: #161a2e; --muted: #5b6180; --line: #e0e4ef;
-    --stack: #e2553a; --orbit: #138a5d; --flock: #d9534a;
+    --stack: #e2553a; --orbit: #138a5d; --flock: #d9534a; --go: #1f7f9a;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0b0e1b; --card: #141933; --fg: #eceffa; --muted: #9ba2c6; --line: #252c4b; --stack: #ff8a6e; --orbit: #5ef0b0; --flock: #ff9a8c; }
+    :root { --bg: #0b0e1b; --card: #141933; --fg: #eceffa; --muted: #9ba2c6; --line: #252c4b; --stack: #ff8a6e; --orbit: #5ef0b0; --flock: #ff9a8c; --go: #6fd3ea; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -25,7 +25,7 @@
   .game img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
   .game h2 { margin: 0; font-size: 22px; line-height: 1.2; }
   .game .tag { margin: 2px 0 0; font-weight: 600; font-size: 14px; }
-  .stack .tag { color: var(--stack); } .orbit .tag { color: var(--orbit); } .flock .tag { color: var(--flock); }
+  .stack .tag { color: var(--stack); } .orbit .tag { color: var(--orbit); } .flock .tag { color: var(--flock); } .go .tag { color: var(--go); }
   .game p { margin: 0; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
   a { color: inherit; font-weight: 600; }
@@ -37,7 +37,7 @@
 <main>
   <header>
     <h1>CraftByte4Fun</h1>
-    <p class="lead">Small, simple tap games for Android and iPhone. Easy to learn, hard to put down.</p>
+    <p class="lead">Small, simple tap games and apps for Android and iPhone. Easy to learn, hard to put down.</p>
   </header>
 
   <section class="games" aria-label="Games">
@@ -77,6 +77,15 @@
       <p>3D stickman wrestling with masked rivals, live commentary and a roaring crowd. Win the belt and defend it.</p>
       <div class="links"><a href="stick-slam/privacy/">Privacy policy</a></div>
       <p class="status">Coming soon to Google Play and the App Store.</p>
+    </article>
+    <article class="game go">
+      <header>
+        <img src="assets/gowindow.png" alt="GoWindow icon">
+        <div><h2>GoWindow: Best Time Outside</h2><p class="tag">Run or walk the dog at the right time.</p></div>
+      </header>
+      <p>Scores every hour of the forecast for running and dog walking, estimates pavement heat for paws, and matches the best window to the free time in your calendar.</p>
+      <div class="links"><a href="gowindow/privacy/">Privacy policy</a></div>
+      <p class="status">Coming soon to the App Store for iPhone.</p>
     </article>
   </section>
 
